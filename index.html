@@ -1,153 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Isabelle Schmit Sophrologue</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #fcf1e9;
-      color: #333;
-    }
-    header, footer {
-      background-color: #D3ACAD;
-      color: white;
-      padding: 1rem;
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .menu {
-      display: none;
-      flex-direction: column;
-      background-color: #D3ACAD;
-      position: absolute;
-      top: 60px;
-      right: 0;
-      width: 200px;
-    }
-    .menu a {
-      color: white;
-      padding: 1rem;
-      text-decoration: none;
-      border-bottom: 1px solid white;
-    }
-    .hamburger {
-      font-size: 2rem;
-      cursor: pointer;
-    }
-    .section {
-      padding: 2rem;
-    }
-    footer a {
-      color: white;
-      margin-right: 10px;
-    }
-    @media(min-width: 768px) {
-      .menu {
-        display: flex;
-        position: static;
-        flex-direction: row;
-        width: auto;
-      }
-      .hamburger {
-        display: none;
-      }
-    }
-  </style>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Site en construction</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link href="logo.png" rel="icon" />
 </head>
-<body>
-  <header>
-    <nav>
-      <div><strong>Isabelle Schmit</strong> Sophrologue</div>
-      <div class="hamburger" onclick="toggleMenu()">☰</div>
-      <div class="menu" id="menu">
-        <a href="#accueil">Accueil</a>
-        <a href="#qui">Qui suis-je ?</a>
-        <a href="#sophro">Qu’est ce que la sophrologie ?</a>
-        <a href="#temoignages">Témoignages</a>
-        <a href="#mutuelles">Mutuelles</a>
-        <a href="#rdv">RDV / Contact</a>
-        <a href="#cabinet">Cabinet</a>
-        <a href="#tarifs">Tarifs</a>
-      </div>
-    </nav>
-  </header>
+<body class="bg-[#fcf1e9] text-gray-800 min-h-screen flex flex-col justify-between">
+<main class="flex-grow flex flex-col items-center justify-center text-center p-6"><img alt="Logo" class="w-24 h-24 mb-6" src="logo.png" />
+<h1 class="text-4xl font-bold mb-4">Site en construction</h1>
 
-  <section class="section" id="accueil">
-    <h1>Bienvenue</h1>
-    <p>Je vous accompagne avec bienveillance grâce à la sophrologie, pour retrouver équilibre, bien-être et sérénité.</p>
-  </section>
+<p class="text-lg mb-6 max-w-xl">Ce site est actuellement en construction.<br />
+Vous pouvez quand m&ecirc;me me contacter via le formulaire ci-dessous.</p>
 
-  <section class="section" id="qui">
-    <h2>Qui suis-je ?</h2>
-    <p>Après 27 ans en entreprise, un burn-out m’a conduite à me reconvertir. Formée à l’Institut de Sophrologie de Catherine Aliotta à Paris, je suis aujourd’hui sophrologue certifiée. Membre de la Chambre Syndicale de la Sophrologie, je m’engage à pratiquer dans le respect du code déontologique.</p>
-    <p>Je propose un accompagnement personnalisé, bienveillant et confidentiel pour que vous puissiez atteindre vos objectifs et devenir autonome dans votre mieux-être.</p>
-  </section>
+<form action="https://formspree.io/f/mvgkberr" class="bg-white p-6 rounded-2xl shadow-md w-full max-w-md" method="POST">
+<div class="mb-4 text-left"><label class="block mb-1 font-semibold" for="name">Nom</label> <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-300" id="name" name="name" required="" type="text" /></div>
 
-  <section class="section" id="sophro">
-    <h2>Qu’est-ce que la sophrologie ?</h2>
-    <p>Méthode verbale et non tactile créée par le Dr Caycedo, la sophrologie agit sur le corps et l’esprit à travers des exercices de respiration, relaxation et visualisation. Elle permet de mieux gérer le stress, de se préparer à des événements, d’accompagner des traitements ou comportements pathologiques.</p>
-  </section>
+<div class="mb-4 text-left"><label class="block mb-1 font-semibold" for="email">Email</label> <input class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-300" id="email" name="email" required="" type="email" /></div>
 
-  <section class="section" id="temoignages">
-    <h2>Témoignages</h2>
-    <p>À venir...</p>
-  </section>
+<div class="mb-4 text-left"><label class="block mb-1 font-semibold" for="message">Message</label><textarea class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-300" id="message" name="message" required="" rows="4"></textarea></div>
+<button class="bg-[#5A005A] text-white px-6 py-2 rounded-full hover:bg-[#880088] transition-colors" type="submit">Envoyer</button></form>
+</main>
 
-  <section class="section" id="mutuelles">
-    <h2>Les mutuelles qui remboursent la sophrologie</h2>
-    <p>De nombreuses mutuelles proposent une prise en charge des séances de sophrologie. Renseignez-vous auprès de la vôtre !</p>
-  </section>
+<footer class="bg-white text-sm text-gray-600 p-6 shadow-inner">
+<p class="mb-2"><strong class="text-xl">Mentions l&eacute;gales :</strong><br />
+<strong>Propri&eacute;taire du site :</strong> Isabelle Schmit<br />
+<strong>Adresse :</strong> 1 Rue Louis Bl&eacute;riot, 91630 Marolles-en-Hurepoix<br />
+<strong>T&eacute;l&eacute;phone :</strong> 06 80 92 98 17<br />
+<strong>H&eacute;bergeur :</strong> o2switch, Chem. des Pardiaux, 63000 Clermont-Ferrand, France<br />
+<strong>Cr&eacute;ateur du site :</strong> Alexis Dulac</p>
 
-  <section class="section" id="rdv">
-    <h2>RDV / Me contacter</h2>
-    <p>Téléphone : 06 80 92 98 17</p>
-    <p>Email : <a href="mailto:isabelleschmitsophrologue@gmail.com">isabelleschmitsophrologue@gmail.com</a></p>
-  </section>
-
-  <section class="section" id="cabinet">
-    <h2>Le cabinet</h2>
-    <p>Je vous accueille à Marolles en Hurepoix, 1 rue Louis Blériot (1er étage, ascenseur). Parking gratuit à 60m, accès RER C gare de Marolles.</p>
-    <p><a href="https://g.co/kgs/z3qJEK2" target="_blank">Voir le plan</a></p>
-  </section>
-
-  <section class="section" id="tarifs">
-    <h2>Tarifs</h2>
-    <ul>
-      <li>Séance individuelle : 70 € (1ère) puis 60 €</li>
-      <li>Séance de groupe : 20 € / personne (5 à 15 personnes)</li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Isabelle Schmit - Tous droits réservés</p>
-    <a href="#accueil">Accueil</a>
-    <a href="#qui">Qui suis-je ?</a>
-    <a href="#sophro">La sophrologie</a>
-    <a href="#temoignages">Témoignages</a>
-    <a href="#mutuelles">Mutuelles</a>
-    <a href="#rdv">Contact</a>
-    <a href="#cabinet">Cabinet</a>
-    <a href="#tarifs">Tarifs</a>
-    <a href="#cgv">Conditions Générales de Vente</a>
-  </footer>
-
-  <section class="section" id="cgv">
-    <h2>Conditions Générales de Vente</h2>
-    <p>Les séances de sophrologie ne se substituent à aucun traitement médical. Toute séance réservée est due sauf annulation 24h à l’avance.</p>
-  </section>
-
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('menu');
-      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-    }
-  </script>
+<p class="mb-2">&copy; 2025 Isabelle Schmit. Tous droits r&eacute;serv&eacute;s.</p>
+</footer>
 </body>
 </html>
