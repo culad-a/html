@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isabelle Schmit Sophrologue</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fcf1e9;
+      color: #333;
+    }
+    header, footer {
+      background-color: #D3ACAD;
+      color: white;
+      padding: 1rem;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #D3ACAD;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+    }
+    .menu a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      border-bottom: 1px solid white;
+    }
+    .hamburger {
+      font-size: 2rem;
+      cursor: pointer;
+    }
+    .section {
+      padding: 2rem;
+    }
+    footer a {
+      color: white;
+      margin-right: 10px;
+    }
+    @media(min-width: 768px) {
+      .menu {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        width: auto;
+      }
+      .hamburger {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div><strong>Isabelle Schmit</strong> Sophrologue</div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div class="menu" id="menu">
+        <a href="#accueil">Accueil</a>
+        <a href="#qui">Qui suis-je ?</a>
+        <a href="#sophro">Qu’est ce que la sophrologie ?</a>
+        <a href="#temoignages">Témoignages</a>
+        <a href="#mutuelles">Mutuelles</a>
+        <a href="#rdv">RDV / Contact</a>
+        <a href="#cabinet">Cabinet</a>
+        <a href="#tarifs">Tarifs</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="section" id="accueil">
+    <h1>Bienvenue</h1>
+    <p>Je vous accompagne avec bienveillance grâce à la sophrologie, pour retrouver équilibre, bien-être et sérénité.</p>
+  </section>
+
+  <section class="section" id="qui">
+    <h2>Qui suis-je ?</h2>
+    <p>Après 27 ans en entreprise, un burn-out m’a conduite à me reconvertir. Formée à l’Institut de Sophrologie de Catherine Aliotta à Paris, je suis aujourd’hui sophrologue certifiée. Membre de la Chambre Syndicale de la Sophrologie, je m’engage à pratiquer dans le respect du code déontologique.</p>
+    <p>Je propose un accompagnement personnalisé, bienveillant et confidentiel pour que vous puissiez atteindre vos objectifs et devenir autonome dans votre mieux-être.</p>
+  </section>
+
+  <section class="section" id="sophro">
+    <h2>Qu’est-ce que la sophrologie ?</h2>
+    <p>Méthode verbale et non tactile créée par le Dr Caycedo, la sophrologie agit sur le corps et l’esprit à travers des exercices de respiration, relaxation et visualisation. Elle permet de mieux gérer le stress, de se préparer à des événements, d’accompagner des traitements ou comportements pathologiques.</p>
+  </section>
+
+  <section class="section" id="temoignages">
+    <h2>Témoignages</h2>
+    <p>À venir...</p>
+  </section>
+
+  <section class="section" id="mutuelles">
+    <h2>Les mutuelles qui remboursent la sophrologie</h2>
+    <p>De nombreuses mutuelles proposent une prise en charge des séances de sophrologie. Renseignez-vous auprès de la vôtre !</p>
+  </section>
+
+  <section class="section" id="rdv">
+    <h2>RDV / Me contacter</h2>
+    <p>Téléphone : 06 80 92 98 17</p>
+    <p>Email : <a href="mailto:isabelleschmitsophrologue@gmail.com">isabelleschmitsophrologue@gmail.com</a></p>
+  </section>
+
+  <section class="section" id="cabinet">
+    <h2>Le cabinet</h2>
+    <p>Je vous accueille à Marolles en Hurepoix, 1 rue Louis Blériot (1er étage, ascenseur). Parking gratuit à 60m, accès RER C gare de Marolles.</p>
+    <p><a href="https://g.co/kgs/z3qJEK2" target="_blank">Voir le plan</a></p>
+  </section>
+
+  <section class="section" id="tarifs">
+    <h2>Tarifs</h2>
+    <ul>
+      <li>Séance individuelle : 70 € (1ère) puis 60 €</li>
+      <li>Séance de groupe : 20 € / personne (5 à 15 personnes)</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Isabelle Schmit - Tous droits réservés</p>
+    <a href="#accueil">Accueil</a>
+    <a href="#qui">Qui suis-je ?</a>
+    <a href="#sophro">La sophrologie</a>
+    <a href="#temoignages">Témoignages</a>
+    <a href="#mutuelles">Mutuelles</a>
+    <a href="#rdv">Contact</a>
+    <a href="#cabinet">Cabinet</a>
+    <a href="#tarifs">Tarifs</a>
+    <a href="#cgv">Conditions Générales de Vente</a>
+  </footer>
+
+  <section class="section" id="cgv">
+    <h2>Conditions Générales de Vente</h2>
+    <p>Les séances de sophrologie ne se substituent à aucun traitement médical. Toute séance réservée est due sauf annulation 24h à l’avance.</p>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+</body>
+</html>
